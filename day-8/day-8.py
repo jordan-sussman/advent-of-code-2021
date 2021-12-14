@@ -12,17 +12,17 @@ for line in data:
     
     n = ""
     for objects in output.split():
-        l = len(objects)
-        if   l == 2: n += "1"; prt1 += 1
-        elif l == 4: n += "4"; prt1 += 1
-        elif l == 3: n += "7"; prt1 += 1
-        elif l == 7: n += "8"; prt1 += 1
-        elif l == 5:
+        lens = len(objects)
+        if   lens == 2: n += "1"; prt1 += 1
+        elif lens == 4: n += "4"; prt1 += 1
+        elif lens == 3: n += "7"; prt1 += 1
+        elif lens == 7: n += "8"; prt1 += 1
+        elif lens == 5:
             sets = set(objects)
             if   len(sets & d[2]) == 2: n += "3"
             elif len(sets & d[4]) == 2: n += "2"
             else: n += "5"
-        else: # l == 6
+        else:
             sets = set(objects)
             if   len(sets & d[2]) == 1: n += "6"
             elif len(sets & d[4]) == 4: n += "9"
