@@ -5,9 +5,9 @@ for line in data:
     signals, output = line.strip().split(" | ")
 
     d = {
-        l: set(sets)
+        lens: set(sets)
         for sets in signals.split()
-        if (l := len(sets)) in (2, 4)
+        if (lens := len(sets)) in (2, 4)
     }
     
     n = ""
