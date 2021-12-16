@@ -29,4 +29,6 @@ prt1 = sum([x + 1 for x in lows])
 prt2 = math.prod(sorted(list(basins), reverse=True)[:3])
 
 print("Part 1 Answer:", prt1)
+# Part 1 Answer: 508
 print("Part 2 Answer:", prt2)
+# Part 2 Answer: 1564640
