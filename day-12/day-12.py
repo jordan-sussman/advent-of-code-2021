@@ -29,7 +29,6 @@ for line in data:
 prt1 = path(map, False)
 prt2 = path(map, True)
 
-
 print("Part 1 Answer:", prt1)
 # Part 1 Answer: 3410
 print("Part 2 Answer:", prt2)
